@@ -1,0 +1,9 @@
+.wrapper {
+    padding: 30px;
+}
+
+.postsWrapper {
+    margin-top: 30px;
+    display: grid;
+    row-gap: 15px;
+}

@@ -1,23 +1,26 @@
+import { NavLink } from 'react-router-dom';
 import s from './SideBar.module.css';
+
+const setActive = ({isActive}) => isActive ? s.activeLink : s.link;
 
 const SideBar = () => {
     return (
         <nav className={s.wrapper}>
             <ul className={s.list}>
                 <li>
-                    <a className={s.link} href="#">Profile</a>
+                    <NavLink className={setActive} to='/'>Profile</NavLink>
                 </li>
                 <li>
-                    <a className={s.link} href="#">Messages</a>
+                    <NavLink className={setActive} to='/dialogs'>Messages</NavLink>
                 </li>
                 <li>
-                    <a className={s.link} href="#">News</a>
+                    <NavLink className={setActive} to='/news'>News</NavLink>
                 </li>
                 <li>
-                    <a className={s.link} href="#">Music</a>
+                    <NavLink className={setActive} to='/music'>Music</NavLink>
                 </li>
                 <li>
-                    <a className={s.link} href="#">Settings</a>
+                    <NavLink className={setActive} to='/settings'>Settings</NavLink>
                 </li>
             </ul>
         </nav>

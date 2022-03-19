@@ -11,6 +11,16 @@
     padding: 15px;
 }
 
+.list li:hover {
+    cursor: pointer;
+}
+
+.activeLink {
+    font-weight: 500;
+    text-decoration: none;
+    color: darkblue;
+}
+
 .link {
     text-decoration: none;
     color: #222;

@@ -5,5 +5,12 @@
 	grid-template-columns: 2fr 10fr;
 	grid-gap: 15px;
 	grid-template-areas: 'header header'
-						 'sidebar profile';
+						 'sidebar content';
+}
+
+.content {
+	grid-area: content;
+	border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(219, 244, 255);
 }
