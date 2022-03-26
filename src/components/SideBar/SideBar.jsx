@@ -8,7 +8,7 @@ const SideBar = () => {
         <nav className={s.wrapper}>
             <ul className={s.list}>
                 <li>
-                    <NavLink className={setActive} to='/'>Profile</NavLink>
+                    <NavLink className={setActive} to='/profile'>Profile</NavLink>
                 </li>
                 <li>
                     <NavLink className={setActive} to='/dialogs'>Messages</NavLink>
