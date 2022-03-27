@@ -11,13 +11,3 @@
     background-color: #fff;
 }
 
-.item {
-    color: #222;
-    text-decoration: none;
-}
-
-.active {
-    font-weight: 500;
-    color: darkblue;
-    text-decoration: none;
-}

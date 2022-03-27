@@ -1,0 +1,22 @@
+.avatar {
+    display: block;
+    margin: 0 auto 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.friendName {
+    font-size: 14px;
+}
+
+.item {
+    color: #222;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: 500;
+    color: darkblue;
+    text-decoration: none;
+}

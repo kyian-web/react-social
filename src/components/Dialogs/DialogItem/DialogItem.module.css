@@ -1,0 +1,22 @@
+.wrapperItem {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 15px;
+}
+
+.item {
+    color: #222;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: 500;
+    color: darkblue;
+    text-decoration: none;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+}
