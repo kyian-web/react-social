@@ -1,9 +1,12 @@
+import {rerenderEntireTree} from '../render';
+
 const state = {
     profilePage: {
         posts: [
             {id: 1, post: 'Hi, how are you?', likesCount: '11'},
-            {id: 2, post: 'Hi, how are you?', likesCount: '4'}
-        ]
+            {id: 2, post: "It's my first post", likesCount: '4'}
+        ], 
+        newPostText: 'it-kamasutra.com'
     },
     dialogsPage: {
         dialogs: [
@@ -30,4 +33,23 @@ const state = {
     }
 };
 
-export default state;
+export const addPost = () => {
+    const newPost = {
+        id: 3,
+        post: state.profilePage.newPostText,
+        likesCount: 0
+    };
+
+    state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
+    rerenderEntireTree(state);
+};
+
+export const updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+};
+
+
+
+export {state};
